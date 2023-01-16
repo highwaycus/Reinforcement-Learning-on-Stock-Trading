@@ -1,4 +1,3 @@
-# Deep Reinforcement Learning for Automated Stock Trading: An Ensemble Strategy
 ## README
 
 #### Execution
