@@ -1,5 +1,7 @@
 ## README
 
+The final presentation is as report.pdf
+
 #### Execution
 The main script file is *RL_QL_test_v3.py*, 
 user can change the save route and stock you want to test.
