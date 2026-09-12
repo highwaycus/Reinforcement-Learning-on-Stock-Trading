@@ -1,18 +1,32 @@
-## README
+# Reinforcement Learning for Stock Trading
 
-The final presentation is as report.pdf
+This project tests whether a reinforcement-learning agent can learn stock-trading decisions from historical market data. It trains and evaluates the agent for a selected ticker, then saves plots for test performance and training stability.
 
-#### Execution
-The main script file is *RL_QL_test_v3.py*, 
-user can change the save route and stock you want to test.
-For name of stock, please use its symbol, such as *AAPL* instead of *APPLE*.
+## What I wanted to test
 
-#### Functions
-*Agent_v3* is the environment. You may need to install *tensorflow* before you execute it.
+Instead of writing every trading rule by hand, I wanted to see what an agent could learn through repeated interaction with a market environment. This repository keeps the experiment, its feature-engineering code, and the final report together.
 
-*collect_data.py* contains the functions for feature engineering.
+## Main files
 
-#### Output
-The output contains two figures and one npy file. The npy file is the training record. 
-One of the image is the performance on test data, 
-another is the error bar plot of training process.
+- `RL_QL_test_v3.py`: main training and evaluation script
+- `Agent_v3`: agent environment
+- `collect_data.py`: feature-engineering functions
+- `report.pdf`: final presentation and report
+
+## Running the experiment
+
+1. Install the required packages, including TensorFlow.
+2. Open `RL_QL_test_v3.py`.
+3. Set the output path and the stock ticker you want to test.
+4. Use a ticker symbol such as `AAPL`, not a company name such as `APPLE`.
+5. Run the script.
+
+## Output
+
+The experiment creates:
+
+- One figure showing performance on the test data
+- One error-bar plot showing the training process
+- One `.npy` file containing the training record
+
+This is an experimental research model, not a live trading system.
